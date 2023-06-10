@@ -351,60 +351,49 @@ body.open .menu a {
     font-size: 16px;
     color: #333333;
 }
+/*****************************/
 
-
-
-
-/*Redes sociales*/
-#redes-sociales {
+#contacto {
+    background-color: var(--clr-primary-100);;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
 }
 
-.redes-sociales-container {
+#contacto h2 {
+    color: #31708f;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 2rem;
+}
+
+.opciones-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
 }
 
-.redes-sociales-container a {
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.redes-sociales-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-/*Comunicacion*/
-#comunicacion {
+.opcion {
+    margin: 0 10px;
     text-align: center;
-    padding: 20px 0;
 }
 
-#comunicacion button {
-    background-color: #5cb85c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
+.opcion img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
 }
 
-#comunicacion button:hover {
-    background-color: #4cae4c;
+.opcion p {
+    margin-top: 10px;
 }
 
-#comunicacion button a {
-    text-decoration: none;
-    color: white;
-}
+/**********************************/
 
 /*footer*/
 footer {
-    background-color: #dff0d8;
+    background-color: var(--clr-primary-100);
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -416,7 +405,6 @@ footer {
     header {
         padding: 10px;
     }
-
     nav ul {
         flex-direction: column;
     }
@@ -424,7 +412,6 @@ footer {
     nav li {
         margin-bottom: 10px;
     }
-
     /* Ajustes para el slider de testimonios */
     #testimonios {
         display: flex;
@@ -432,65 +419,81 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
     .testimonial {
         flex: 0 0 100%;
         text-align: center;
         margin-bottom: 20px;
     }
-
     .testimonial img {
         max-width: 200px;
     }
-
     /* Ajustes para el apartado de menú */
     #menu {
         padding: 20px;
     }
-
     .menu-items {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .menu-item {
         text-align: center;
     }
-
     .menu-item img {
         max-width: 200px;
     }
-
     footer {
         padding: 10px;
         text-align: center;
     }
-
     #franquicias .franquicias-container {
         flex-wrap: wrap;
     }
-
     .franquicia {
         flex: 0 0 100%;
         margin-bottom: 20px;
     }
-
     .franquicia img {
         max-width: 200px;
     }
-
     #beneficios {
         align-items: stretch;
     }
-
     .beneficio {
         margin-bottom: 40px;
     }
-
     .beneficio img {
         margin-bottom: 0;
     }
+    /*******************************/
+    #contacto {
+        padding: 50px 20px;
+      }
+    
+      #contacto h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    
+      .opciones-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .opcion {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    
+      .opcion img {
+        width: 60px;
+        height: 60px;
+      }
+    
+      .opcion p {
+        margin-top: 10px;
+      }
 }
 
 /****************************************/
