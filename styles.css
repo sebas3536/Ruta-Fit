@@ -1,9 +1,11 @@
 :root {
-    --clr-primary-100: #bfbfff;
+    --clr-primary-100: #93b059;
 
     --clr-neutral-100: 278, 33%, 90%;
     --clr-neutral-200: 281, 25%, 33%;
     --clr-neutral-400: #896391;
+
+    --ff-base:'Pacifico', cursive ;
 }
 
 body {
@@ -28,10 +30,11 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     padding: 5px;
-}
+}       
 
 #hero {
-    background-image: url('img/6.jpeg');
+    background-color: pink;
+    /*background-image: url('img/6.jpeg');*/
     padding: 100px 20px;
     text-align: center;
 }
@@ -39,7 +42,7 @@ nav ul li a {
 #hero h1 {
     font-size: 36px;
     color: #000000;
-    font-family: 'Pacifico', cursive;
+    font-family: var(--ff-base);
     margin-bottom: .5rem;
 }
 
@@ -73,8 +76,8 @@ header {
 
 #menu h2 {
     font-size: 24px;
-    color: #333;
-    font-family: 'Pacifico', cursive;
+    color: #000000;
+    font-family: var(--ff-base);
     margin-bottom: .5rem;
 }
 
@@ -290,7 +293,7 @@ body.open .menu a {
 .franquicia h3 {
     margin-top: 10px;
     font-size: 18px;
-    font-family: 'Pacifico', cursive;
+    font-family: var(--ff-base);
 }
 
 .franquicia p {
@@ -301,7 +304,7 @@ body.open .menu a {
 #franquicias h2 {
     font-size: 24px;
     color: #000000;
-    font-family: 'Pacifico', cursive;
+    font-family: var(--ff-base);
     margin-bottom: 2rem;
 }
 
@@ -311,8 +314,8 @@ body.open .menu a {
 
 #testimonios h2 {
     font-size: 24px;
-    color: #31708f;
-    font-family: 'Pacifico', cursive;
+    color: #000000;
+    font-family: var(--ff-base);
     margin-bottom: 2rem;
 }
 
@@ -351,18 +354,20 @@ body.open .menu a {
     font-size: 16px;
     color: #333333;
 }
+
 /*****************************/
 
 #contacto {
-    background-color: var(--clr-primary-100);;
+    background-color: var(--clr-primary-100);
+    ;
     padding: 20px;
     text-align: center;
 }
 
 #contacto h2 {
-    color: #31708f;
+    color: #000000;
     font-size: 24px;
-    font-family: 'Pacifico', cursive;
+    font-family: var(--ff-base);
     margin-bottom: 2rem;
 }
 
@@ -405,6 +410,7 @@ footer {
     header {
         padding: 10px;
     }
+
     nav ul {
         flex-direction: column;
     }
@@ -412,6 +418,7 @@ footer {
     nav li {
         margin-bottom: 10px;
     }
+
     /* Ajustes para el slider de testimonios */
     #testimonios {
         display: flex;
@@ -419,81 +426,133 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     .testimonial {
         flex: 0 0 100%;
         text-align: center;
         margin-bottom: 20px;
     }
+
     .testimonial img {
         max-width: 200px;
     }
+
     /* Ajustes para el apartado de menú */
     #menu {
         padding: 20px;
     }
+
     .menu-items {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .menu-item {
         text-align: center;
     }
+
     .menu-item img {
         max-width: 200px;
     }
+
     footer {
         padding: 10px;
         text-align: center;
     }
+
     #franquicias .franquicias-container {
         flex-wrap: wrap;
     }
+
     .franquicia {
         flex: 0 0 100%;
         margin-bottom: 20px;
     }
+
     .franquicia img {
         max-width: 200px;
     }
+
     #beneficios {
         align-items: stretch;
     }
+
     .beneficio {
         margin-bottom: 40px;
     }
+
     .beneficio img {
         margin-bottom: 0;
     }
-    /*******************************/
-    #contacto {
-        padding: 50px 20px;
-      }
-    
-      #contacto h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-    
-      .opciones-contacto {
+
+    /*******************************
+    #llamado-accion {
+        background-color: #ffffff;
+        padding: 50px;
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
+    }
     
-      .opcion {
-        text-align: center;
-        margin-bottom: 30px;
-      }
+    #llamado-accion h2 {
+        font-size: 24px;
+        color: #333333;
+        font-family: var(--ff-base);
+        margin-bottom: 1rem;
+    }
     
-      .opcion img {
-        width: 60px;
-        height: 60px;
-      }
+    #llamado-accion p {
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 2rem;
+    }
     
-      .opcion p {
-        margin-top: 10px;
-      }
+    #llamado-accion button {
+        display: inline-block;
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #llamado-accion button:hover {
+        transform: scale(1.05);
+    }
+    
+    #llamado-accion button a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #llamado-accion button a:hover {
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 720px) {
+        #llamado-accion {
+            padding: 30px;
+        }
+      
+        #llamado-accion h2 {
+            font-size: 20px;
+        }
+      
+        #llamado-accion p {
+            font-size: 14px;
+        }
+      
+        #llamado-accion button {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    
+    ****************************************/
 }
-
-/****************************************/
